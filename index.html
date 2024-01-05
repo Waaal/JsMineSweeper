@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Game</title>
+
+        <link rel = "stylesheet" href = "index.css"/>
+        <script src = "app.js"></script>
+    </head>
+    <body>
+        <div CLASS = "headline">Sweeper Mine</div>
+        <div CLASS = "container">
+            <div CLASS = "settings-container">
+                <div CLASS = "settings">
+                    <h2 CLASS = "column-item column-full">Settings</h2>
+                    <span CLASS = "column-item">Rows</span> <span CLASS = "column-item"><input type = "number" name = "rows" ID = "rows-ID"/></span>
+                    <span CLASS = "column-item">Columns</span> <span CLASS = "column-item"><input type = "number" name = "columns" ID = "columns-ID"/></span>
+                    <span CLASS = "column-item">Size</span> <span CLASS = "column-item"><input type = "number" name = "size" ID = "size-ID"/></span>
+                    <span CLASS = "column-item">Padding</span> <span CLASS = "column-item"><input type = "number" name = "padding" ID = "padding-ID"/></span>
+                    <span CLASS = "column-item">Bombs</span> <span CLASS = "column-item"><input type = "number" name = "bombs" ID = "bombs-ID"/></span>
+                    <span CLASS = "column-item"><input type = "button" name = "reset" value = "reset" ID = "reset-ID"/></span>
+                    <span CLASS = "column-item"><input type = "button" name = "save" value = "Save" ID = "save-ID"/></span>
+                </div>
+            </div>
+            <div CLASS = "canvas-container">
+                <canvas ID = "canvas" oncontextmenu="return false;">
+                </canvas>
+            </div>
+        </div>
+        <div ID = "text-ID">
+        </div>
+    </body>
+</html>

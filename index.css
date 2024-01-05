@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Montserrat', Arial;
+    background-color: #eeeeee;
+}
+
+#canvas
+{
+    background-color: #000000;
+}
+
+.container
+{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+}
+
+.settings-container
+{
+    width: 450px;
+    min-width: 15%;
+}
+
+.settings
+{
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 375px;
+    height: fit-content;
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 15px;
+    padding-bottom: 15px;
+}
+
+.column-item
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+}
+
+.column-full
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+
+.settings input[type="number"]
+{
+    padding: 4px;
+    background-color: #eeeeee;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 75px;
+}
+
+.settings input[type="button"]
+{
+    padding: 4px;
+    background-color: #eeeeee;
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 75px;
+}
+
+.settings input[type="button"]:hover
+{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.canvas-container
+{
+    max-width: 85%;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headline
+{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 40px;
+}
+
+#text-ID
+{
+    margin-top: 25px;
+    display: block;
+    text-align: center;
+}
